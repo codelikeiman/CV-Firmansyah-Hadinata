@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 600;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        
+        .info-item svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            color: #667eea;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .experience-item h3, .education-item h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        .experience-item .company, .education-item .institution {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .experience-item .duration, .education-item .duration {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .experience-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .experience-item li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 5px 0;
+            color: #555;
+        }
+        
+        .skill-category li:before {
+            content: "▹ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>FIRMANSYAH HADINATA</h1>
+            <p>Mahasiswa Sistem Informasi</p>
+        </div>
+        
+        <div class="content">
+            <!-- Informasi Kontak -->
+            <div class="section">
+                <h2 class="section-title">Informasi Kontak</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>hadinatafirmansyahh@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span>+62 852 8018 8803</span>
+                    </div>
+                    <div class="info-item">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Medan, Sumatera Utara</span>
+                    </div>
+                    <div class="info-item">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                        <span>github : codelikeiman</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profil -->
+            <div class="section">
+                <h2 class="section-title">Profil Profesional</h2>
+                <p style="line-height: 1.8; color: #555;">
+                    Mahasiswa aktif STMIK Triguna Dharma dengan pengalaman mengajar bahasa Inggris selama 3 tahun dan kemampuan pemrograman yang solid. Memiliki keahlian dalam JavaScript dan C++, serta fasih berbahasa Inggris. Berdedikasi untuk terus belajar dan berkembang di bidang teknologi informasi dengan kemampuan komunikasi yang baik.
+                </p>
+            </div>
+            
+            <!-- Pendidikan -->
+            <div class="section">
+                <h2 class="section-title">Pendidikan</h2>
+                <div class="education-item">
+                    <h3>Sstem Informasi</h3>
+                    <div class="institution">STMIK Triguna Dharma</div>
+                    <div class="duration">2023 - Sekarang</div>
+                    <p style="margin-top: 10px; color: #555;">Program Studi: Sistem Informasi</p>
+                    <!-- <p style="color: #555;">IPK: 3.75 / 4.00</p> -->
+                </div>
+            </div>
+            
+            <!-- Pengalaman Kerja -->
+            <div class="section">
+                <h2 class="section-title">Pengalaman Kerja</h2>
+                <div class="experience-item">
+                    <h3>Pengajar Bahasa Inggris</h3>
+                    <div class="company">Essential English Course</div>
+                    <div class="duration">2022 - Sekarang (3 Tahun)</div>
+                    <ul>
+                        <li>Mengajar bahasa Inggris untuk berbagai tingkat kemampuan dari pemula hingga mahir</li>
+                        <li>Mengembangkan materi pembelajaran yang interaktif dan efektif untuk meningkatkan kemampuan komunikasi siswa</li>
+                        <li>Membantu siswa mencapai target pembelajaran mereka dengan metode pengajaran yang disesuaikan</li>
+                        <li>Melakukan evaluasi berkala untuk mengukur perkembangan kemampuan siswa</li>
+                        <li>Memberikan konsultasi terkait persiapan tes bahasa Inggris dan komunikasi profesional</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Keahlian -->
+            <div class="section">
+                <h2 class="section-title">Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Bahasa</h4>
+                        <ul>
+                            <li>Bahasa Indonesia (Native)</li>
+                            <li>Bahasa Inggris (Fasih)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Pemrograman</h4>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>HTML & CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Soft Skills</h4>
+                        <ul>
+                            <li>Komunikasi Efektif</li>
+                            <li>Pengajaran & Mentoring</li>
+                            <li>Kerja Tim</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Teknologi</h4>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Microsoft Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyek/Sertifikasi (Opsional) -->
+            <div class="section">
+                <h2 class="section-title">Proyek & Pencapaian</h2>
+                <div class="experience-item">
+                    <h3>Proyek Akademik</h3>
+                    <ul>
+                        <li>Pengembangan aplikasi web menggunakan JavaScript</li>
+                        <li>Implementasi algoritma dan struktur data menggunakan C++</li>
+                        <li>Proyek sistem pendukung keputusan berbasi metode SAW</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
